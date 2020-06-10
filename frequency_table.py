@@ -33,3 +33,20 @@ user_ratings_ft = freq_table(user_ratings)
 print(genres_ft)
 print('\n')
 print(user_ratings_ft)
+
+
+# Version 2
+## Shorter version of the same function
+
+def freq_table(index):
+    frequency_table = {}
+    for row in apps_data[1:]:
+        column = row[index]
+        if column in frequency_table:
+            frequency_table[column] += 1
+        else:
+            frequency_table[column] = 1
+    return frequency_table
+
+ratings_ft = freq_table(7)
+print(ratings_ft)
