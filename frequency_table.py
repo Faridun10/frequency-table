@@ -1,6 +1,6 @@
 
 
-# CODE FROM THE PREVIOUS SCREEN
+# Read in the CSV file
 opened_file = open('AppleStore.csv')
 from csv import reader
 read_file = reader(opened_file)
